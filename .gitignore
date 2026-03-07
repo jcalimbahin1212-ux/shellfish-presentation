@@ -3,4 +3,5 @@ node_modules/
 Thumbs.db
 *.log
 .env
-games/
+games/3kh0/
+games/sz/

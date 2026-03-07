@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Happy Wheels</title>
+  <style>body{margin:0;overflow:hidden;background:#000;color:#fff;font-family:sans-serif}</style>
+</head>
+<body>
+<script>
+  fetch('https://cdn.jsdelivr.net/gh/HappyWheelsUnblocked/HappyWheelsUnblocked.github.io@main/index.html')
+    .then(r => r.text())
+    .then(html => { document.open(); document.write(html); document.close(); })
+    .catch(() => { document.body.innerHTML = '<p style="padding:20px">failed to load game. check your connection.</p>'; });
+</script>
+</body>
+</html>
