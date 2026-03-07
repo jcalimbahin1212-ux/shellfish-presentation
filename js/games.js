@@ -54,6 +54,10 @@ const POPULAR_GAMES = [
   'super smash bros', 'zelda: link to the past',
   'donkey kong country', 'crash bandicoot', 'silent hill',
   'mortal kombat', 'street fighter 2', 'counter-strike 1.6',
+  'agar.io', 'brotato', 'time shooter', 'snow rider 3d',
+  'pixel gun 3d', 'fruit ninja', 'bad piggies', 'sonic mania',
+  'sandboxels', 'raft wars', 'dadish', 'survivor.io',
+  'pokemon red', 'tattletail', 'tomb of the mask',
 ];
 
 const GAMES = [
@@ -565,4 +569,205 @@ const GAMES = [
   { name: "animal crossing: wild world", url: "games/ugs/clanimalcrossingwildworld.html", cat: "simulation", desc: "ds life sim with villagers, fishing, and fossil collecting" },
   { name: "world's hardest game 3", url: "games/ugs/clworldshardestgame3.html", cat: "arcade", desc: "third impossibly hard square navigation game" },
   { name: "world's hardest game 4", url: "games/ugs/clworldshardestgame4.html", cat: "arcade", desc: "fourth iteration of impossible difficulty" },
+
+  // ========================================
+  // === NEW: ADDITIONAL DISCOVERED GAMES ===
+  // ========================================
+
+  // --- 3KH0 ADDITIONS ---
+  { name: "fake virus", url: "games/3kh0/fake-virus/index.html", cat: "casual", desc: "prank your friends with a fake virus screen" },
+  { name: "gimme the airpod", url: "games/3kh0/gimme-the-airpod/index.html", cat: "casual", desc: "grab the airpod in this quick reflexes challenge" },
+  { name: "glass city", url: "games/3kh0/glass-city/index.html", cat: "casual", desc: "explore and interact in a fragile glass city" },
+  { name: "meme 2048", url: "games/3kh0/meme2048/index.html", cat: "puzzle", desc: "2048 but every tile is a classic internet meme" },
+  { name: "om bounce", url: "games/3kh0/om-bounce/index.html", cat: "casual", desc: "bounce om nom through obstacles to collect candy" },
+  { name: "push your luck", url: "games/3kh0/push-your-luck/index.html", cat: "casual", desc: "risk-reward game, keep pushing or cash out" },
+  { name: "soundboard", url: "games/3kh0/soundboard/index.html", cat: "casual", desc: "tap buttons to play funny sounds and memes" },
+  { name: "tv static", url: "games/3kh0/tv-static/index.html", cat: "casual", desc: "interactive tv static noise simulation" },
+
+  // --- SZ GAMES ADDITIONS ---
+  { name: "agar.io", url: "games/sz/games/agario.html", cat: "arcade", desc: "eat smaller cells and grow in this multiplayer io classic" },
+  { name: "air fighter", url: "games/sz/games/air.html", cat: "action", desc: "aerial combat dogfighting action game" },
+  { name: "infiltrating the airship", url: "games/sz/games/airship.html", cat: "adventure", desc: "henry stickmin infiltrates an airship with branching choices" },
+  { name: "dungeon", url: "games/sz/games/dungeon.html", cat: "adventure", desc: "explore dangerous dungeon corridors and fight monsters" },
+  { name: "turbo moto racer", url: "games/sz/games/moter.html", cat: "racing", desc: "high-speed motorcycle racing through traffic" },
+  { name: "pc breakdown", url: "games/sz/games/pc-breakdown.html", cat: "casual", desc: "destroy a virtual pc in satisfying ways" },
+  { name: "space platformer", url: "games/sz/games/spac/index.html", cat: "platformer", desc: "jump between platforms in outer space" },
+  { name: "space shooter", url: "games/sz/games/spacesh/index.html", cat: "shooter", desc: "shoot down waves of alien ships in space" },
+  { name: "zombie game", url: "games/sz/games/zombie/index.html", cat: "action", desc: "survive waves of zombies with weapons and tactics" },
+
+  // --- TRUFFLED: PUZZLE ---
+  { name: "2048 variant", url: "games/truffled/1.html", cat: "puzzle", desc: "alternative take on the classic 2048 number merge game" },
+  { name: "bad piggies", url: "games/truffled/21.html", cat: "puzzle", desc: "build vehicles for the pigs from angry birds to reach the goal" },
+  { name: "blocky puzzle", url: "games/truffled/39.html", cat: "puzzle", desc: "fit blocky shapes together in this spatial puzzle" },
+  { name: "fused 240", url: "games/truffled/134.html", cat: "puzzle", desc: "merge and fuse tiles in this number combination puzzle" },
+  { name: "little alchemy", url: "games/truffled/180.html", cat: "puzzle", desc: "combine basic elements to discover hundreds of new items" },
+  { name: "minesweeper plus", url: "games/truffled/191.html", cat: "puzzle", desc: "enhanced minesweeper with extra features and modes" },
+  { name: "merge rot", url: "games/truffled/192.html", cat: "puzzle", desc: "merge rotting items in this dark twist on merge puzzles" },
+  { name: "stick with it", url: "games/truffled/287.html", cat: "puzzle", desc: "sticky physics puzzle where objects cling together" },
+  { name: "tetrisweeper", url: "games/truffled/302.html", cat: "puzzle", desc: "mashup of tetris and minesweeper in one brain-bending game" },
+  { name: "timeless rewind", url: "games/truffled/80.html", cat: "puzzle", desc: "rewind time to solve mind-bending puzzles" },
+  { name: "to the core", url: "games/truffled/316.html", cat: "puzzle", desc: "dig deeper and deeper toward the planet's core" },
+  { name: "wordle unlimited", url: "games/truffled/334.html", cat: "puzzle", desc: "play wordle with no daily limit, unlimited word guessing" },
+  { name: "dr. mario", url: "games/truffled/92.html", cat: "puzzle", desc: "match colored capsules to eliminate viruses in mario's puzzle classic" },
+  { name: "fireboy and watergirl 4", url: "games/truffled/117.html", cat: "puzzle", desc: "crystal temple, co-op puzzles with light and crystal mechanics" },
+
+  // --- TRUFFLED: PLATFORMER ---
+  { name: "anton blast demo", url: "games/truffled/16.html", cat: "platformer", desc: "smash through levels in this punchy retro-style platformer demo" },
+  { name: "dadish", url: "games/truffled/73.html", cat: "platformer", desc: "a radish dad searches for his missing kids across tricky levels" },
+  { name: "dadish 2", url: "games/truffled/74.html", cat: "platformer", desc: "sequel with more levels and dad jokes from a radish" },
+  { name: "dadish 3", url: "games/truffled/75.html", cat: "platformer", desc: "third adventure of the platforming radish father" },
+  { name: "dadish 3d", url: "games/truffled/76.html", cat: "platformer", desc: "dadish goes 3d in this new dimension of radish parenting" },
+  { name: "daily dadish", url: "games/truffled/77.html", cat: "platformer", desc: "daily challenge levels starring the radish dad" },
+  { name: "fancy pants adventures world 3", url: "games/truffled/112.html", cat: "platformer", desc: "third fancy pants with buttery-smooth stick figure platforming" },
+  { name: "littlebigplanet (psp)", url: "games/truffled/181.html", cat: "platformer", desc: "media molecule's creative platformer via psp emulation" },
+  { name: "ovo 2", url: "games/truffled/206.html", cat: "platformer", desc: "sequel to the fast stickman parkour platformer" },
+  { name: "ovo dimensions", url: "games/truffled/207.html", cat: "platformer", desc: "dimensional twist on the ovo parkour platformer" },
+  { name: "pizza tower scoutdigo mod", url: "games/truffled/225.html", cat: "platformer", desc: "fan mod of pizza tower with new content and characters" },
+  { name: "run", url: "games/truffled/257.html", cat: "platformer", desc: "the original space tunnel runner that started the series" },
+  { name: "run 2", url: "games/truffled/258.html", cat: "platformer", desc: "second space tunnel runner with skater and runner modes" },
+  { name: "running fred", url: "games/truffled/260.html", cat: "platformer", desc: "endless runner through deadly traps with ragdoll gore" },
+  { name: "vex", url: "games/truffled/322.html", cat: "platformer", desc: "the original vex stick-figure platformer with deadly traps" },
+  { name: "vex 2", url: "games/truffled/323.html", cat: "platformer", desc: "second vex with new levels and trickier obstacles" },
+  { name: "vex 7", url: "games/truffled/328.html", cat: "platformer", desc: "seventh vex with advanced mechanics and brutal levels" },
+  { name: "vex 8", url: "games/truffled/329.html", cat: "platformer", desc: "eighth and latest vex with the hardest parkour yet" },
+  { name: "sonic mania", url: "games/truffled/283.html", cat: "platformer", desc: "fan-favorite sonic revival with classic and remixed zones" },
+  { name: "sonic robo blast 2", url: "games/truffled/284.html", cat: "platformer", desc: "fan-made 3d sonic game built on the doom engine" },
+
+  // --- TRUFFLED: ACTION ---
+  { name: "among us online edition", url: "games/truffled/12.html", cat: "action", desc: "online browser version of the social deduction hit" },
+  { name: "epic", url: "games/truffled/14.html", cat: "action", desc: "fast-paced action game with epic combat" },
+  { name: "apes vs helium", url: "games/truffled/17.html", cat: "action", desc: "apes battle against helium-powered enemies" },
+  { name: "bloodmoney", url: "games/truffled/37.html", cat: "action", desc: "violent action game about earning blood money" },
+  { name: "brotato", url: "games/truffled/46.html", cat: "action", desc: "roguelike arena shooter as a potato wielding up to 6 weapons" },
+  { name: "bomberman ii", url: "games/truffled/51.html", cat: "action", desc: "sequel to the classic maze bombing game" },
+  { name: "grey-box testing", url: "games/truffled/143.html", cat: "action", desc: "action game with a grey-box art style testing theme" },
+  { name: "raft wars", url: "games/truffled/239.html", cat: "action", desc: "fire cannonballs from a raft to defend your buried treasure" },
+  { name: "raft wars 2", url: "games/truffled/240.html", cat: "action", desc: "sequel with more weapons and waterpark battlegrounds" },
+  { name: "ragdoll archers", url: "games/truffled/241.html", cat: "action", desc: "floppy ragdoll archery duels with physics-based aiming" },
+  { name: "survivor.io", url: "games/truffled/290.html", cat: "action", desc: "auto-battler survival against zombie hordes, upgrade and endure" },
+  { name: "the binding of isaac wrath of the lamb", url: "games/truffled/306.html", cat: "action", desc: "flash expansion adding items, bosses, and challenges to isaac" },
+  { name: "get yoked", url: "games/truffled/339.html", cat: "action", desc: "get buff and fight in this over-the-top action brawler" },
+
+  // --- TRUFFLED: SHOOTER ---
+  { name: "christmas massacre", url: "games/truffled/55.html", cat: "shooter", desc: "holiday-themed top-down shooter with festive carnage" },
+  { name: "counter-strike (psp)", url: "games/truffled/63.html", cat: "shooter", desc: "counter-strike portable via psp emulation" },
+  { name: "gun mayhem redux", url: "games/truffled/153.html", cat: "shooter", desc: "remastered platform shooter, blast opponents off the stage" },
+  { name: "nz portable", url: "games/truffled/196.html", cat: "shooter", desc: "portable fps action game" },
+  { name: "pixel gun 3d", url: "games/truffled/223.html", cat: "shooter", desc: "blocky multiplayer fps with crafting and battle royale modes" },
+  { name: "postal", url: "games/truffled/233.html", cat: "shooter", desc: "controversial isometric shooter from the 90s" },
+  { name: "rooftop snipers 2", url: "games/truffled/256.html", cat: "shooter", desc: "sequel to the ragdoll rooftop dueling game" },
+  { name: "skibidi shooter", url: "games/truffled/264.html", cat: "shooter", desc: "meme-themed shooter based on the skibidi toilet trend" },
+  { name: "time shooter", url: "games/truffled/310.html", cat: "shooter", desc: "time only moves when you move, clear rooms of enemies" },
+  { name: "time shooter 2", url: "games/truffled/311.html", cat: "shooter", desc: "sequel with more weapons and time-freezing combat" },
+  { name: "time shooter 3 swat", url: "games/truffled/312.html", cat: "shooter", desc: "swat-themed time shooter with tactical hostage rescue" },
+
+  // --- TRUFFLED: HORROR ---
+  { name: "arthur's nightmare", url: "games/truffled/18.html", cat: "horror", desc: "creepy horror game exploring arthur's dark nightmares" },
+  { name: "baldi's basics", url: "games/truffled/23.html", cat: "horror", desc: "the original edu-horror parody, collect notebooks and escape" },
+  { name: "baldi's fun new school plus", url: "games/truffled/26.html", cat: "horror", desc: "fan expansion of baldi's basics with a whole new school" },
+  { name: "the deadseat", url: "games/truffled/79.html", cat: "horror", desc: "horror game centered around a cursed seat" },
+  { name: "five nights at freddy's 4 halloween", url: "games/truffled/125.html", cat: "horror", desc: "halloween edition of fnaf 4 with reskinned nightmare animatronics" },
+  { name: "five nights at big e", url: "games/truffled/130.html", cat: "horror", desc: "fnaf fan-game with original animatronics and scares" },
+  { name: "five nights at winston's", url: "games/truffled/131.html", cat: "horror", desc: "fnaf fan-game set in winston's establishment" },
+  { name: "go to bed", url: "games/truffled/148.html", cat: "horror", desc: "short horror about what happens when you stay up too late" },
+  { name: "granny 2", url: "games/truffled/145.html", cat: "horror", desc: "escape granny and grandpa's house with new rooms and traps" },
+  { name: "granny 3", url: "games/truffled/146.html", cat: "horror", desc: "third granny escape with bigger house and more hiding spots" },
+  { name: "pretend it's not there", url: "games/truffled/236.html", cat: "horror", desc: "psychological horror about ignoring something terrifying" },
+  { name: "scary path", url: "games/truffled/262.html", cat: "horror", desc: "walk down a dark path and survive whatever lurks ahead" },
+  { name: "shift at midnight", url: "games/truffled/263.html", cat: "horror", desc: "work the midnight shift and survive supernatural encounters" },
+  { name: "slendytubbies 2", url: "games/truffled/266.html", cat: "horror", desc: "teletubbies horror parody sequel, collect custards and survive" },
+  { name: "tattletail", url: "games/truffled/299.html", cat: "horror", desc: "90s toy horror, take care of a furby-like toy that attracts danger" },
+  { name: "baldi (unity port)", url: "games/truffled/243.html", cat: "horror", desc: "unity engine port of baldi's basics with enhanced graphics" },
+
+  // --- TRUFFLED: RACING ---
+  { name: "bergentruck 201x", url: "games/truffled/33.html", cat: "racing", desc: "drive a big truck through challenging terrain" },
+  { name: "escape road 2", url: "games/truffled/106.html", cat: "racing", desc: "sequel to the police chase escape driving game" },
+  { name: "jelly drift", url: "games/truffled/164.html", cat: "racing", desc: "drift a wobbly jelly car through sharp turns" },
+  { name: "snow rider 3d", url: "games/truffled/274.html", cat: "racing", desc: "sled downhill through snowy slopes dodging obstacles" },
+  { name: "speed stars", url: "games/truffled/286.html", cat: "racing", desc: "competitive speed racing with upgradeable cars" },
+
+  // --- TRUFFLED: SPORTS ---
+  { name: "1 on 1 soccer", url: "games/truffled/2.html", cat: "sports", desc: "head-to-head soccer with simple one-on-one matches" },
+  { name: "baseball bros", url: "games/truffled/27.html", cat: "sports", desc: "casual baseball game with big hits and simple controls" },
+  { name: "basket random", url: "games/truffled/28.html", cat: "sports", desc: "wacky physics basketball with random conditions each round" },
+  { name: "football bros", url: "games/truffled/136.html", cat: "sports", desc: "casual football game with fast arcade-style action" },
+  { name: "soccer random", url: "games/truffled/275.html", cat: "sports", desc: "random physics soccer with changing rules every round" },
+  { name: "soccer bros", url: "games/truffled/276.html", cat: "sports", desc: "arcade soccer with simple controls and big goals" },
+  { name: "ten basket", url: "games/truffled/300.html", cat: "sports", desc: "sink ten baskets in a row with precise aim" },
+  { name: "volley random", url: "games/truffled/330.html", cat: "sports", desc: "random physics volleyball with wild changing conditions" },
+
+  // --- TRUFFLED: FIGHTING ---
+  { name: "boxing random", url: "games/truffled/53.html", cat: "fighting", desc: "random physics boxing with changing fighters each round" },
+  { name: "gladihoppers", url: "games/truffled/141.html", cat: "fighting", desc: "physics-based gladiator combat with floppy warriors" },
+  { name: "madness melee", url: "games/truffled/182.html", cat: "fighting", desc: "madness combat brawler with chaotic melee action" },
+  { name: "oshi oshi punch", url: "games/truffled/204.html", cat: "fighting", desc: "punch opponents off platforms in this party brawler" },
+  { name: "super smash flash", url: "games/truffled/293.html", cat: "fighting", desc: "the original fan-made flash smash bros with classic roster" },
+
+  // --- TRUFFLED: ARCADE ---
+  { name: "super falling fred", url: "games/truffled/109.html", cat: "arcade", desc: "fall through deadly obstacles with ragdoll gore physics" },
+  { name: "gravity run", url: "games/truffled/142.html", cat: "arcade", desc: "run and flip gravity to dodge obstacles" },
+  { name: "om nom run", url: "games/truffled/202.html", cat: "arcade", desc: "endless runner starring cut the rope's om nom" },
+  { name: "ms. pac-man", url: "games/truffled/209.html", cat: "arcade", desc: "the classic sequel with smarter ghosts and new mazes" },
+  { name: "rerun", url: "games/truffled/244.html", cat: "arcade", desc: "replay-based arcade game where past runs help future ones" },
+  { name: "space waves", url: "games/truffled/285.html", cat: "arcade", desc: "navigate through pulsing space waves and obstacles" },
+  { name: "super monkey ball jr", url: "games/truffled/295.html", cat: "arcade", desc: "gba port of the monkey-in-a-ball tilt platformer" },
+  { name: "super monkey ball (flash)", url: "games/truffled/296.html", cat: "arcade", desc: "flash recreation of the monkey ball rolling challenge" },
+  { name: "tomb of the mask", url: "games/truffled/314.html", cat: "arcade", desc: "swipe to zoom through procedural tomb mazes collecting dots" },
+
+  // --- TRUFFLED: CASUAL ---
+  { name: "angry birds (unity)", url: "games/truffled/13.html", cat: "casual", desc: "unity engine rebuild of the classic bird-flinging game" },
+  { name: "battle for dream island", url: "games/truffled/34.html", cat: "casual", desc: "game based on the bfdi web animation series" },
+  { name: "burrito bison launcha libre", url: "games/truffled/48.html", cat: "casual", desc: "launch a luchador bison through gummy bears to escape" },
+  { name: "burrito bison revenge", url: "games/truffled/49.html", cat: "casual", desc: "bounce and smash through gummy bears for revenge" },
+  { name: "bopcity", url: "games/truffled/52.html", cat: "casual", desc: "casual rhythm-style bopping game" },
+  { name: "cloverpit", url: "games/truffled/57.html", cat: "casual", desc: "casual game with clover-themed challenges" },
+  { name: "going balls", url: "games/truffled/64.html", cat: "casual", desc: "roll a ball through obstacle courses on narrow paths" },
+  { name: "gunspin", url: "games/truffled/154.html", cat: "casual", desc: "fire a gun to propel it through the air for distance" },
+  { name: "do not take this cat home", url: "games/truffled/86.html", cat: "casual", desc: "you probably should not take this cat home" },
+  { name: "fruit ninja", url: "games/truffled/135.html", cat: "casual", desc: "slice flying fruit with your finger, avoid the bombs" },
+  { name: "nubby's number factory", url: "games/truffled/200.html", cat: "casual", desc: "quirky number-themed casual game" },
+  { name: "ragdoll hit", url: "games/truffled/242.html", cat: "casual", desc: "launch ragdolls for maximum impact and distance" },
+  { name: "warioware diy", url: "games/truffled/331.html", cat: "casual", desc: "make your own microgames in this ds classic via emulation" },
+  { name: "mario party 2", url: "games/truffled/184.html", cat: "casual", desc: "n64 mario party sequel with costume boards via emulation" },
+  { name: "mario party 3", url: "games/truffled/185.html", cat: "casual", desc: "third n64 mario party with duel maps via emulation" },
+
+  // --- TRUFFLED: COOKING ---
+  { name: "cooking mama 3", url: "games/truffled/62.html", cat: "cooking", desc: "third cooking mama with new recipes and kitchen tools" },
+  { name: "papa's bakeria", url: "games/truffled/211.html", cat: "cooking", desc: "bake pies with custom crusts and toppings for customers" },
+  { name: "papa's burgeria", url: "games/truffled/212.html", cat: "cooking", desc: "flip burgers and stack toppings at papa's burger joint" },
+  { name: "papa's donuteria", url: "games/truffled/214.html", cat: "cooking", desc: "fry and decorate donuts for hungry customers" },
+
+  // --- TRUFFLED: RPG ---
+  { name: "fnaf world refreshed", url: "games/truffled/127.html", cat: "rpg", desc: "fan-updated fnaf world rpg with rebalanced content" },
+  { name: "pokemon red", url: "games/truffled/228.html", cat: "rpg", desc: "the original game boy pokemon via emulation" },
+  { name: "touhou mother", url: "games/truffled/317.html", cat: "rpg", desc: "fan crossover rpg blending touhou and earthbound" },
+
+  // --- TRUFFLED: SIMULATION ---
+  { name: "customer support", url: "games/truffled/69.html", cat: "simulation", desc: "handle angry callers in this customer service nightmare sim" },
+  { name: "duck life space", url: "games/truffled/101.html", cat: "simulation", desc: "train your duck for intergalactic races across the cosmos" },
+  { name: "duck life battle", url: "games/truffled/103.html", cat: "simulation", desc: "train and battle your duck against other ducks" },
+  { name: "duck life adventure", url: "games/truffled/104.html", cat: "simulation", desc: "open-world duck life with exploration and training" },
+  { name: "gacha life", url: "games/truffled/137.html", cat: "simulation", desc: "dress up anime characters and create stories in studio mode" },
+  { name: "gachaverse", url: "games/truffled/138.html", cat: "simulation", desc: "gacha character creator with rpg battle elements" },
+  { name: "human expenditure program", url: "games/truffled/161.html", cat: "simulation", desc: "dark simulation about managing human resources literally" },
+  { name: "my teardrop", url: "games/truffled/195.html", cat: "simulation", desc: "emotional simulation game about a single teardrop" },
+  { name: "tomodachi collection", url: "games/truffled/315.html", cat: "simulation", desc: "nintendo's quirky life sim with miis on a virtual island" },
+  { name: "we become what we behold", url: "games/truffled/333.html", cat: "simulation", desc: "short game about news cycles, violence, and how media shapes us" },
+
+  // --- TRUFFLED: IDLE ---
+  { name: "learn to fly idle", url: "games/truffled/176.html", cat: "idle", desc: "idle version of the penguin launching series" },
+
+  // --- TRUFFLED: CARD ---
+  { name: "blackjack", url: "games/truffled/36.html", cat: "card", desc: "classic casino blackjack, try to hit 21 without busting" },
+
+  // --- TRUFFLED: SANDBOX ---
+  { name: "sandboxels", url: "games/truffled/261.html", cat: "sandbox", desc: "falling sand game with hundreds of interactive elements" },
+
+  // --- TRUFFLED: RHYTHM ---
+  { name: "thirty dollar website", url: "games/truffled/6.html", cat: "rhythm", desc: "meme sound sequencer, create songs with internet sound effects" },
+
+  // --- TRUFFLED: ADVENTURE ---
+  { name: "kindergarten 3", url: "games/truffled/171.html", cat: "adventure", desc: "third dark humor adventure in a new twisted school" },
+  { name: "riddle school 4", url: "games/truffled/251.html", cat: "adventure", desc: "fourth riddle school with alien abduction plot twists" },
+  { name: "riddle school 5", url: "games/truffled/252.html", cat: "adventure", desc: "epic finale of the riddle school point-and-click series" },
 ];
