@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Docs</title>
+  <link rel="icon" href="https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a0a;
+      color: #c8c8c8;
+      font-family: -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-transform: lowercase;
+    }
+    .launch {
+      text-align: center;
+    }
+    .launch-icon {
+      margin-bottom: 1rem;
+    }
+    .launch-btn {
+      background: #141414;
+      border: 1px solid #1e1e1e;
+      color: #c8c8c8;
+      font-family: inherit;
+      font-size: 0.9rem;
+      padding: 10px 32px;
+      border-radius: 8px;
+      cursor: pointer;
+      text-transform: lowercase;
+      transition: all 0.2s ease;
+    }
+    .launch-btn:hover {
+      background: #1a1a1a;
+      border-color: #2a2a2a;
+      color: #e8e8e8;
+    }
+    .launch-sub {
+      margin-top: 0.8rem;
+      font-size: 0.7rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="launch">
+    <div class="launch-icon">
+      <svg width="40" height="44" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 5c0-2.5-2-4.2-5-4.2-2.5 0-4.5 1.3-5.8 3.2C5.2 7 4 10.8 4 14.5c0 2.5.7 4.5 2 5.8L2.5 23c-.4.5-.2 1 .3 1H7l1.2-1.3c1.2.5 2.5.8 3.8.8 5 0 8.5-3.8 8.5-8.8 0-2-.6-3.5-2-4.7" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 2.5c1.3-1.2 3-1.8 4.3-1.2M10.5 6c-.7 1.2-1.2 3-1.2 5M15.5 4c2 .6 3.2 2.5 3.2 4.5" stroke="white" stroke-width="1.2" stroke-linecap="round"/><circle cx="14.5" cy="6.5" r="1" fill="white"/><path d="M4.5 25l2-1.3M8 26.2l.7-2M3 23.5l2.5-.6" stroke="white" stroke-width="1.2" stroke-linecap="round"/></svg>
+    </div>
+    <button class="launch-btn" onclick="launch()">open shellfish ubg</button>
+    <div class="launch-sub">opens in a stealth tab</div>
+  </div>
+  <script>
+    function launch() {
+      const w = window.open('about:blank', '_blank');
+      if (w) {
+        w.document.write(`
+          <!DOCTYPE html>
+          <html><head>
+            <title>Google Docs</title>
+            <link rel="icon" href="https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico">
+            <style>*{margin:0;padding:0}html,body,iframe{width:100%;height:100%;border:none;overflow:hidden}</style>
+          </head><body>
+            <iframe src="${location.href.replace('launcher.html','index.html')}" allowfullscreen></iframe>
+          </body></html>
+        `);
+        w.document.close();
+      }
+    }
+  </script>
+</body>
+</html>
