@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <link rel="icon" href="https://adfree-sz-games.github.io/G.png" />
+    <title>Sz Games - Game (UNITY)</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script defer data-domain="adfree-sz-games.github.io" src="https://stats.senty.com.au/js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="https://adfree-sz-games.github.io/manifest.json" />
+
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(117, 117, 117);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Page Content */
+      .game {
+        position: absolute;
+        color: white;
+
+        transform: scale(1.8);
+        z-index: 3;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .buttonForMenu {
+        color: white;
+        text-decoration: none;
+      }
+      #game {
+        margin-left: 300px;
+        margin-right: 300px;
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+        width: calc(100% - 600px);
+        height: calc(100% - 222px);
+      }
+      .ads {
+        text-align: center;
+      }
+
+      .side_ad_left {
+        top: 130px;
+        left: 0;
+        position: fixed;
+      }
+      .side_ad_right {
+        top: 130px;
+        right: 0;
+        position: fixed;
+      }
+    </style>
+
+    <script src="https://stpd.cloud/assets/libraries/inview.min.js"></script>
+    <script>
+      inView.offset(-200)
+    </script>
+
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script src="../gpt-loader.js"></script>
+  </head>
+
+  <body>
+    <script src="../div-loader.js"></script>
+    <iframe frameborder="0" id="game" src="" allowfullscreen></iframe>
+    <div
+      style="
+        cursor: pointer;
+        position: fixed;
+        border-radius: 15px;
+        color: rgb(224, 224, 224);
+        background-color: #1d1d1dc0;
+        left: 0;
+        bottom: 104px;
+        margin: 10px;
+      "
+      id="Menu"
+    >
+      <a href="/" class="material-icons buttonForMenu" style="margin: 5px"> arrow_back </a>
+      <span
+        class="material-icons buttonForMenu"
+        style="margin: 5px"
+        onclick="document.getElementById('game').contentWindow.gameInstance.SetFullscreen(1)"
+      >
+        fullscreen
+      </span>
+    </div>
+  </body>
+
+  <script>
+    var isFUll = false
+    var canvas = document.getElementById('game')
+    let hh = window.innerHeight
+    let game = ''
+
+    // Get the text element
+    var textElement = document.getElementById('game')
+    textElement.height = hh
+
+    // Get the current URL
+    var currentUrl = new URL(window.location.href)
+    console.log(currentUrl)
+
+    if (currentUrl.searchParams.has('game')) {
+      game = currentUrl.searchParams.get('game')
+      loadGame()
+    }
+
+    function requestFullScreen(element) {
+      // Supports most browsers and their versions.
+      var requestMethod =
+        element.requestFullScreen ||
+        element.webkitRequestFullScreen ||
+        element.mozRequestFullScreen ||
+        element.msRequestFullscreen
+
+      if (requestMethod) {
+        // Native full screen.
+        requestMethod.call(element)
+        let hh = window.innerHeight
+
+        document.getElementById('game').height = hh
+      } else if (typeof window.ActiveXObject !== 'undefined') {
+        // Older IE.
+        var wscript = new ActiveXObject('WScript.Shell')
+        if (wscript !== null) {
+          wscript.SendKeys('{F11}')
+        }
+      }
+    }
+
+    function makeFullScreen() {
+      isFUll = true
+      requestFullScreen(canvas)
+    }
+
+    function loadGame() {
+      if (game) {
+        textElement.src = game
+      }
+    }
+  </script>
+</html>
