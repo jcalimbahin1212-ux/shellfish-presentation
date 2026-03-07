@@ -717,6 +717,61 @@
     });
   }
 
+  // ─── cursor glow ───
+  function initCursorGlow() {
+    const glow = document.getElementById('cursor-glow');
+    if (!glow) return;
+    document.addEventListener('mousemove', (e) => {
+      glow.style.left = `${e.clientX}px`;
+      glow.style.top = `${e.clientY}px`;
+    });
+  }
+
+  // ─── shrimp cursor (hand-drawn) ───
+  function initShrimpCursor() {
+    const cursor = document.getElementById('shrimp-cursor');
+    if (!cursor) return;
+    const hoverables = "a, button, [role='button'], .game-card, .sidebar-item, .icon-btn, .back-btn, input, .logo";
+
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    });
+
+    document.addEventListener('mouseover', (e) => {
+      if (e.target.closest(hoverables)) {
+        cursor.classList.add('hovering');
+        cursor.classList.remove('clicking');
+      }
+    });
+
+    document.addEventListener('mouseout', (e) => {
+      if (e.target.closest(hoverables)) {
+        cursor.classList.remove('hovering');
+      }
+    });
+
+    document.addEventListener('mousedown', () => {
+      cursor.classList.add('clicking');
+      cursor.classList.remove('hovering');
+      document.body.classList.add('clicking');
+    });
+
+    document.addEventListener('mouseup', () => {
+      cursor.classList.remove('clicking');
+      document.body.classList.remove('clicking');
+    });
+
+    document.addEventListener('mouseleave', () => {
+      cursor.style.opacity = '0';
+    });
+
+    document.addEventListener('mouseenter', () => {
+      cursor.style.opacity = '1';
+    });
+  }
+
   // ─── start ───
+  initShrimpCursor();
+  initCursorGlow();
   initSplash();
 })();
