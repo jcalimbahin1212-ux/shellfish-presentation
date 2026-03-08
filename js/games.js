@@ -63,7 +63,6 @@ const POPULAR_GAMES = [
   'territorial.io', 'monkey mart', 'clicker heroes',
   'roblox', 'fortnite', 'epic battle fantasy 3',
   'super mario bros 3', 'a dark room', 'trimps',
-  'shellfish craft',
 ];
 
 const GAMES = [
@@ -1182,7 +1181,4 @@ const GAMES = [
   { name: "web osu", url: "games/monkeygg2/web-osu/index.html", cat: "rhythm", desc: "browser-based osu rhythm game clone" },
   { name: "where is the water", url: "games/monkeygg2/where-is-the-water/index.html", cat: "puzzle", desc: "dig paths to guide water to the right place" },
   { name: "x-trench run", url: "games/monkeygg2/x-trench-run/index.html", cat: "shooter", desc: "star wars inspired trench run, fly and shoot through the canyon" },
-
-  // --- SHELLFISH ORIGINALS ---
-  { name: "shellfish craft", url: "games/shellfish-craft/index.html", cat: "sandbox", desc: "voxel sandbox with terrain generation, block building, trees, ores, and fly mode" },
 ];
